@@ -12,6 +12,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class CustomerController {
     private CustomerService service;
 
+    public CustomerController(CustomerService service) {
+        this.service = service;
+    }
+
     @GetMapping
     public ResponseEntity<Iterable<Customer>> getAll() {
         return ResponseEntity.ok(service.getAll());
