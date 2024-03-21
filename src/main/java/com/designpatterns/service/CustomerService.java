@@ -4,4 +4,6 @@ import com.designpatterns.model.Customer;
 
 public interface CustomerService {
     Iterable<Customer> getAll();
+
+    void save(Customer customer);
 }
