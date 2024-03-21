@@ -1,4 +1,7 @@
 package com.designpatterns.service;
 
-public class CustomerService {
+import com.designpatterns.model.Customer;
+
+public interface CustomerService {
+    Iterable<Customer> getAll();
 }
